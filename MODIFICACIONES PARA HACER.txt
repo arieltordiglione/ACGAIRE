@@ -1,0 +1,8 @@
+ver video 7:57 que hace responsive la pagina con grid!!!!!!!!!!!!!!
+
+
+SECCION TECNICA: ver que flex usamos , tamaño minimo- creo que queda asi
+
+ver coherencia en toda la pag. usar misma metodologia al definir nombres.
+cuando este todo listo ver responsive. que no se rompa nada
+

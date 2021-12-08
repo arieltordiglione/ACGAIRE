@@ -1,0 +1,348 @@
+* {
+  font-family: "Carme", "sans-serif";
+}
+
+body {
+  background-color: #ccc;
+}
+
+.encabezado {
+  display: inline-block;
+  margin: 0px;
+  width: 100%;
+  background-image: url(imagenes/difusor1.jpg);
+  background-size: cover;
+  background-position: 90% 20%;
+  height: 300px;
+}
+
+.contacto {
+  display: inline-block;
+  position: absolute;
+  top: 245px;
+  right: 0;
+  /*text-shadow: 1px 1px #fff;*/
+}
+
+.contacto:hover {
+  background-color: #eee;
+}
+#logo {
+  width: 8vw;
+  height: 8vw;
+  float: left;
+  border: 2px solid black;
+}
+
+#titulo {
+  color: #000;
+  font-size: 5vw;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 2vw;
+  user-select: none;
+}
+
+#titulo2 {
+  font-size: 2vw;
+  font-weight: bold;
+  text-align: left;
+  margin: 15px 10vw;
+  margin-top: 0px;
+
+  /*  display: inline-block;*/
+}
+
+#subtitulo {
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+/*ADAPTAR A MOVILES*/
+@media screen and (max-width: 700px) {
+  .encabezado {
+    height: 100px;
+  }
+  .contacto {
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    right: 0px;
+  }
+  /*div {
+    display: block;
+    width: 100%;
+  }
+  */
+  #logo {
+    width: 55px;
+    height: 55px;
+  }
+  #titulo {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  #titulo2 {
+    font-size: 12px;
+    margin-left: 65px;
+  }
+  #subtitulo {
+    font-size: 10px;
+  }
+  body {
+    font-size: 11px;
+  }
+}
+
+/*MENU RESPONSIVO*/
+
+.nav__responsive-ul {
+  display: none; /*para eliminar el de version movil y que solo quede el menu normal*/
+}
+
+.nav {
+  background-color: #aaa;
+  position: absolute;
+  z-index: 100000;
+  width: 100%;
+  font-weight: bold;
+}
+
+.nav__li {
+  display: inline-block;
+  padding: 12px;
+  color: #fff;
+}
+
+/*el texto esta como enlace que lleva a otra pagina.*/
+.nav__li a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*caracteristica de los iconos*/
+.nav__li i {
+  box-sizing: border-box;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.nav__li:hover > a {
+  /*cuando paso el mouse por los enlaces cambian*/
+  color: rgb(255, 2, 2);
+  font-size: 1.1em;
+  transition: all 1s;
+  font-weight: bold;
+}
+
+/*ACA MODIFICO EL ICONO AL PASARLE EL MOUSE POR ENCIMA*/
+.nav__li:hover {
+  color: #f00;
+}
+
+.nav__responsive-button-container {
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+  background-color: #aaa;
+  margin-top: -74px;
+  z-index: 100;
+}
+
+.nav__responsive-button {
+  padding: 6px 20px;
+  text-align: right;
+  width: 100%;
+}
+
+/*AJUSTAR MENU NAV A RESOLUCION*/
+/*con este comando le decimos que cuando la pantalla sea menor a 940px desaparezca el menu.
+(940px porque es el largo que tiene nuestro menu antes de desaparecer. verificar abriendo consola y 
+arrastrando hasta que se descajete todo el menu)*/
+
+@media screen and (max-width: 940px) {
+  .nav__ul {
+    display: none;
+  }
+  .nav {
+    height: 37px;
+    width: 100%;
+  }
+  .nav__responsive-ul {
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: 37px;
+    padding-top: 37px;
+    height: 37px;
+  }
+
+  .nav__li-container {
+    position: relative;
+    top: -1000px;
+    /* para que no este hasta que lo actives con el hover*/
+    height: calc(100vh - 74px);
+    transition: left 1s;
+    z-index: 1;
+    width: 75%; /*poner al 75% para poder cancelarlo */
+  }
+
+  .nav__responsive-li {
+    width: 100%;
+    padding: 9px 20px;
+    background-color: #aaa;
+  }
+
+  .nav__responsive-li:hover > a {
+    /*cuando paso el mouse por los enlaces cambian*/
+    color: rgb(255, 2, 2);
+    font-size: 1.1em;
+    transition: all 1s;
+    font-weight: bold;
+  }
+
+  /*iconos*/
+  .nav__responsive-li i {
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 5px;
+    width: 30px;
+    color: #fff;
+  }
+
+  /*letras del menu*/
+  .nav__responsive-li a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  /*con esto lo hacemos aparecer al tocar las 3 rayitas desde el celular*/
+  .nav__responsive-ul:hover > .nav__li-container {
+    top: -37px;
+  }
+}
+
+/*CATALOGO*/
+.titulo h1 {
+  margin-top: 55px;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.accordion__button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #aaa;
+  text-align: left;
+  font-weight: bold;
+  transform: background 0.2s;
+}
+
+.accordion__button::after {
+  content: "\25be";
+  float: right;
+  transform: scale(1.5);
+}
+
+/*para cambiar el color cuando este activo*/
+.accordion__button--active {
+  background: #555555;
+}
+/*para cambiar el icono a "flechita arriba" cuando se despliegue*/
+.accordion__button--active::after {
+  content: "\25b4";
+}
+
+.accordion__content {
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.2s;
+  width: 100%;
+  margin: 5px 0px;
+  background-color: #bbb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.producto img {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin: 10px;
+}
+
+.producto a {
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.producto img:hover {
+  border: 3px solid #f00;
+}
+
+/*SECCION TECNICA*/
+.seccion-tecnica h1 {
+  margin-top: 65px;
+  text-align: center;
+}
+
+.seccion-tecnica h2 {
+  text-align: center;
+  padding: 10px;
+}
+
+.seccion-tecnica h3 {
+  text-align: center;
+  padding: 10px;
+}
+
+.seccion-tecnica h4 {
+  padding-top: 50px;
+}
+
+.datos-tecnicos {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.datos-tecnicos img {
+  height: 600px;
+  width: 700px;
+  border: 3px solid #000;
+  border-radius: 1%;
+}
+
+.datos-tecnicos div {
+  width: 80%;
+  background-color: #bbb;
+  padding: 10px;
+  text-align: center;
+  /*border: 1px solid #555;*/
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+.datos-tecnicos-rejas img {
+  width: 350px;
+  height: 200px;
+}
