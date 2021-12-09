@@ -6,3 +6,5 @@ SECCION TECNICA: ver que flex usamos , tamaño minimo- creo que queda asi
 ver coherencia en toda la pag. usar misma metodologia al definir nombres.
 cuando este todo listo ver responsive. que no se rompa nada
 
+PONER FOOTER Y QUE NO SE ROMPA NADA
+
