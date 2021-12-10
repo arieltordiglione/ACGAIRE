@@ -9,4 +9,4 @@ ver coherencia en toda la pag. usar misma metodologia al definir nombres.
 cuando este todo listo ver responsive. que no se rompa nada
 
 
-
+UNIFICAR COLORES EN VAR
