@@ -18,18 +18,6 @@ body {
 	height: 300px;
 }
 
-.contacto {
-	display: inline-block;
-	position: absolute;
-	top: 245px;
-	right: 0;
-	/*text-shadow: 1px 1px #fff;*/
-}
-
-.contacto:hover {
-	background-color: rgba(238, 238, 238, 0.822);
-	transition: all 3s;
-}
 #logo {
 	width: 8vw;
 	height: 8vw;
@@ -65,23 +53,46 @@ body {
 	border-bottom: 2px solid #000;
 }
 
+/* FOOTER */
+.footer {
+	background: #aaa;
+	padding: 30px;
+	margin-top: 20px;
+}
+
+.footer__title {
+	text-align: center;
+	padding: 10px 0 30px 0;
+}
+
+.footer__grid {
+	display: grid;
+	grid-template-columns: 1.1fr 1.1fr 1fr 0.8fr;
+	justify-items: center;
+}
+
+.footer__mail .footer__tel .footer__direccion .footer__redes {
+	text-align: center;
+}
+
+.footer b {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.footer__redes a {
+	text-decoration: none;
+	color: #000;
+	padding: 0px 5px;
+}
+
 /*ADAPTAR A MOVILES*/
 @media screen and (max-width: 700px) {
 	.encabezado {
 		width: 100%;
 		height: 100px;
 	}
-	.contacto {
-		display: inline-block;
-		position: relative;
-		top: 0px;
-		right: 0px;
-	}
-	/*div {
-    display: block;
-    width: 100%;
-  }
-  */
+
 	#logo {
 		width: 55px;
 		height: 55px;
@@ -485,34 +496,43 @@ arrastrando hasta que se descajete todo el menu)*/
 .listado__grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 550px;
 	gap: 10px;
 }
 
 /* CONTACTO */
-.datos {
-	width: 90%;
+.contacto {
+	width: 100%;
+}
+
+.contacto__grid {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	width: 100%;
+	height: 100%;
+	gap: 10px;
+}
+
+.contacto__datos {
 	display: flex;
 	flex-direction: column;
 	margin: 20px auto;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-around;
+	align-items: justify;
 	font-size: 20px;
-}
-.datos li {
-	padding: 10px;
-	list-style: none;
+	background-color: #aaa;
 }
 
-.mapa {
+.contacto__mapa {
 	display: flex;
 	margin: 20px auto;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	background-color: #aaa;
 }
-.mapa iframe {
-	margin: 20px auto;
+.contacto__mapa iframe {
+	margin: auto;
 	border: 3px solid #000;
-	width: 90%;
+	width: 100%;
 	height: 500px;
 }
