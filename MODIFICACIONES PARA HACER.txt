@@ -15,5 +15,9 @@ UNIFICAR COLORES EN VAR
 
 VER DIV.TITULO O CLASS TITULO A H1
 
+
+ver slider en arieltordiglione.github no carga
+
+
 se rompio el footer. se alargo cuando agregue el SLIDER EN index
 VER "container" en footer y en slider
