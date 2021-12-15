@@ -10,3 +10,10 @@ cuando este todo listo ver responsive. que no se rompa nada
 
 
 UNIFICAR COLORES EN VAR
+
+
+
+VER DIV.TITULO O CLASS TITULO A H1
+
+se rompio el footer. se alargo cuando agregue el SLIDER EN index
+VER "container" en footer y en slider
