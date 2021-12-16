@@ -6,18 +6,14 @@ VER HEAD EN GENERAL
 SECCION TECNICA: ver que flex usamos , tamaño minimo- creo que queda asi
 
 ver coherencia en toda la pag. usar misma metodologia al definir nombres.
+que no se repita nada
 cuando este todo listo ver responsive. que no se rompa nada
 
 
-UNIFICAR COLORES EN VAR
+
 
 
 
 VER DIV.TITULO O CLASS TITULO A H1
 
 
-ver slider en arieltordiglione.github no carga
-
-
-se rompio el footer. se alargo cuando agregue el SLIDER EN index
-VER "container" en footer y en slider
