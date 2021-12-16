@@ -269,6 +269,8 @@ arrastrando hasta que se descajete todo el menu)*/
 /* SOBRE NOSOTROS */
 .nosotros {
 	display: grid;
+	width: 95%;
+	margin: 0 auto;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 10px;
 }
@@ -281,6 +283,7 @@ arrastrando hasta que se descajete todo el menu)*/
 	align-content: center;
 	justify-content: space-around;
 	text-align: center;
+	box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
 }
 
 .nosotros__text p {
@@ -453,6 +456,7 @@ arrastrando hasta que se descajete todo el menu)*/
 	margin: 10px;
 	object-fit: cover;
 	object-position: center;
+	box-shadow: 4px 3px rgba(0, 0, 0, 0.5);
 }
 
 .producto a {
@@ -465,7 +469,7 @@ arrastrando hasta que se descajete todo el menu)*/
 
 .producto img:hover {
 	border: 2px solid var(--color-rojo);
-	transform: scale(1.3);
+	transform: scale(1.25);
 }
 
 /*SECCION TECNICA*/
