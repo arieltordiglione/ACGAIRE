@@ -198,7 +198,7 @@ body {
 /* SOBRE NOSOTROS */
 .nosotros {
 	display: grid;
-	width: 95%;
+	width: 90%;
 	margin: 0 auto;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 10px;
@@ -274,9 +274,9 @@ body {
 
 .slider__container {
 	display: grid;
-	grid-template-columns: 50px 1fr 50px;
+	grid-template-columns: 30px 1fr 30px;
 	align-items: center;
-	gap: 1em;
+	gap: 0;
 }
 
 .slider__body {
@@ -307,7 +307,7 @@ body {
 
 .slider__arrow {
 	cursor: pointer;
-	width: 90%;
+	width: 100%;
 }
 
 .slider__arrow:nth-of-type(2) {
@@ -389,7 +389,7 @@ body {
 	border: 1px solid #000;
 	margin: 10px;
 	object-fit: cover;
-	object-position: center;
+
 	box-shadow: 4px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -402,8 +402,18 @@ body {
 }
 
 .producto img:hover {
-	border: 2px solid var(--color-rojo);
+	border: 2px solid #000;
 	transform: scale(1.25);
+}
+
+.catalogo__simplificado {
+	margin: 100px 0px 0px 0px;
+}
+
+.catalogo__simplificado a {
+	color: #000;
+
+	text-decoration: none;
 }
 
 /*SECCION TECNICA*/
@@ -598,9 +608,8 @@ body {
 }
 
 .listado__grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 10px;
+	column-count: 3;
+	column-gap: 2em;
 }
 
 /* CONTACTO */
@@ -767,6 +776,35 @@ body {
 	}
 }
 
+@media screen and (max-width: 800px) {
+	/* SOBRE NOSOTROS INDEX GRID */
+	.nosotros {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	/* CONTACTO */
+	.contacto__grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 90%;
+		margin: 5px auto;
+	}
+
+	.contacto__datos {
+		justify-content: space-evenly;
+	}
+
+	.contacto__datos li {
+		margin: 0 20px;
+		font-size: 15px;
+	}
+
+	.contacto__mapa {
+		grid-row: 1/2;
+	}
+}
+
 @media screen and (max-width: 769px) {
 	body {
 		font-size: 14px;
@@ -812,12 +850,6 @@ body {
 		margin: 0 auto;
 	}
 
-	/* SOBRE NOSOTROS INDEX GRID */
-	.nosotros {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-	}
-
 	/* SECCION TECNICA */
 	.datos-tecnicos img {
 		min-width: 80%;
@@ -852,6 +884,14 @@ body {
 	.footer__redes {
 		padding-bottom: 30px;
 	}
+
+	/* LISTADO DE OBRAS */
+	.galeria__title {
+		font-size: 15px;
+	}
+	.obra__icon {
+		font-size: 15px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -878,6 +918,12 @@ body {
 
 	.slider__arrow {
 		width: 70%;
+	}
+
+	/* LISTADO DE OBRAS */
+	.listado__grid {
+		column-count: 2;
+		column-gap: 2em;
 	}
 }
 
@@ -911,6 +957,15 @@ body {
 	.nosotros {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;
+		width: 85%;
+	}
+
+	/* LISTADO DE OBRAS */
+	.galeria__title {
+		font-size: 10px;
+	}
+	.obra__icon {
+		font-size: 10px;
 	}
 }
 

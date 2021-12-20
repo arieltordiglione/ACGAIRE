@@ -2,11 +2,10 @@ ver video 7:57 que hace responsive la pagina con grid!!!!!!!!!!!!!!
 
 
 
+ 
 
-SECCION TECNICA: ver que flex usamos , tamaño minimo- creo que queda asi
 
-
-cuando este todo listo ver responsive. que no se rompa nada
+ 
 
 
 
@@ -15,5 +14,7 @@ cuando este todo listo ver responsive. que no se rompa nada
 *PONGO IMAGEN DEL FRENTE Y DE ADENTRO EN PAG PRINCIPAL? GRID O SLIDER?
  
 
+
+ 
 
  
