@@ -331,6 +331,16 @@ body {
 }
  */
 
+/* presentacion index */
+.presentacion h1 {
+	font-size: 30px;
+	background-color: var(--color-gris2);
+	text-align: center;
+	box-shadow: 3px 3px rgb(0 0 0 / 50%);
+	width: 95%;
+	margin: 20px auto;
+}
+
 /*CATALOGO*/
 .titulo {
 	margin-top: 55px;
@@ -389,7 +399,7 @@ body {
 	border: 1px solid #000;
 	margin: 10px;
 	object-fit: cover;
-
+	object-position: center;
 	box-shadow: 4px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -951,6 +961,12 @@ body {
 
 	.slider__arrow {
 		width: 70%;
+	}
+
+	/* presentacion index */
+	.presentacion h1 {
+		font-size: 30px;
+		width: 85%;
 	}
 
 	/* SOBRE NOSOTROS INDEX GRID */
